@@ -1,10 +1,18 @@
+'use client';
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
-
 const Home = () => {
+    const handleDownload = () => {
+      const link = document.createElement('a');
+      link.href = '/assets/assets/KARAN_CV.pdf'; // Adjust the path to your PDF file
+      link.download = 'CV.pdf'; // Specify the file name
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -24,6 +32,7 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2 text-sm xl:text-base"
+                onClick={handleDownload}
               >
                 <span>Download CV</span>
                 <FiDownload className="text-lg xl:text-xl" />

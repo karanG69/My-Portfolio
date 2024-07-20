@@ -92,7 +92,7 @@ const Work = () => {
                 {project.stack.map((item,index)=>{
                   return (
                     <li key={index} className="text-xl text-accent">
-                      {item.name},
+                      {item.name}
                       {/*remove the last comma*/}
                       {index !== project.stack.length-1 && ","}
                     </li>
@@ -135,20 +135,22 @@ const Work = () => {
             spaceBetween={30} 
             slidesPerView={1}
             onSlideChange={handleSlideChange}
+            
             >
               {projects.map((project,index)=>{
-                return <SwiperSlide key={index} className="w-full"> 
-                <div className="h-[400px] relative group flex justify-center items-center bg-pink-50/20">
-                  <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                  <div className="relative w-full h-full">
-                    <Image src={project.image} fill className="object-cover" alt=""/>
+                return (
+                  <SwiperSlide key={index} className="w-full"> 
+                  <div className="h-[350px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                    <div className="relative w-full h-full">
+                       <Image src={project.image} fill className="object-cover" alt=""/>
+                    </div>
                   </div>
-                </div>
-                </SwiperSlide>
+                  </SwiperSlide>
+                );
               })} 
-              <WorkSliderBtns 
-              containerStyle="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" 
-              btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] h-[35px] w-[35px] flex justify-center items-center transition-all"/>
+              
+              <WorkSliderBtns className="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"/>
             </Swiper>
           </div>
         </div>

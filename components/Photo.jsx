@@ -19,10 +19,10 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[298px] h-[298px] xl:w-[320px] xl:h-[320px] mix-blend-lighten absolute"
+          className="w-[298px] h-[298px] xl:w-[325px] xl:h-[325px] mix-blend-lighten absolute"
         >
           <Image
-            src="/assets/assets/photo.png"
+            src="/assets/assets/photo.jpg"
             priority
             quality={100}
             fill
@@ -31,7 +31,7 @@ const Photo = () => {
           />
         </motion.div>
         <motion.svg
-          className="w-[310px] xl:w-[350px] h-[310px] xl:h-[350px]"
+          className="w-[310px] xl:w-[325px] h-[310px] xl:h-[325px]"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"

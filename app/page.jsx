@@ -7,7 +7,7 @@ import { FiDownload } from "react-icons/fi";
 const Home = () => {
     const handleDownload = () => {
       const link = document.createElement('a');
-      link.href = '/assets/assets/ATS_CV.pdf'; // Adjust the path to your PDF file
+      link.href = '/assets/assets/karanGuptaCV.pdf'; // Adjust the path to your PDF file
       link.download = 'CV.pdf'; // Specify the file name
       document.body.appendChild(link);
       link.click();

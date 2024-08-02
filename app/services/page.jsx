@@ -6,26 +6,26 @@ import { Description } from "@radix-ui/react-dialog";
 const services = [
     {
         num: '01',
-        title: 'Web Development',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.',
+        title: 'CODE',
+        description: 'i can create anything with my laptop.',
         href: ""
     },
     {
         num: '02',
-        title: 'UI/UX Design',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.',
+        title: 'DESIGN',
+        description: 'i create visually appealing and user-friendly experiences.',
         href: ""
     },
     {
         num: '03',
-        title: 'Logo Design',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.',
+        title: 'DEVELOP',
+        description: 'i build software and systems from scratch.',
         href: ""
     },
     {
         num: '04',
-        title: 'SEO',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.',
+        title: 'OPTIMIZE',
+        description: 'i enhance efficiency and performance of projects.',
         href: ""
     },
 ];

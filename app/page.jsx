@@ -5,14 +5,14 @@ import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 const Home = () => {
-    const handleDownload = () => {
-      const link = document.createElement('a');
-      link.href = '/assets/assets/karanGuptaCV.pdf'; // Adjust the path to your PDF file
-      link.download = 'CV.pdf'; // Specify the file name
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    };
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/assets/assets/karanGuptaCV.pdf'; // Adjust the path to your PDF file
+    link.download = 'CV.pdf'; // Specify the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -24,8 +24,7 @@ const Home = () => {
               <span className="text-accent">Karan Gupta</span>
             </h1>
             <p className="max-w-[600px] mb-8 text-white/80">
-              I excel at crafting elegant digital experiences and am proficient
-              in various programming languages and technologies.
+              I weave captivating digital realms, blending precision and passion to curate online journeys as a <span className="text-accent">web developer.</span>
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
@@ -45,7 +44,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+          <div className="order-1 xl:order-none mb-8 xl:mb-0 xl:mr-5">
             <Photo />
           </div>
         </div>

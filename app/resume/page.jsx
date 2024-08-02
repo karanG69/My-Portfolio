@@ -56,31 +56,26 @@ const about = {
 const experience = {
   icon: '/assets/assets/resume/badge.svg',
   title: 'My experiences',
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+  description: "Crafting digital wonders with a decade of sass, slaying pixels, and outshowing unicorns in the",
   items: [
     {
-      company: "Texh Solutions Inc",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "E-commerce Startup",
+      position: "Freelance Web Developer",
+      duration: "2024 - Present",
     },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
-      duration: "Summer 2021",
+      company: "The Sparks Foundation",
+      position: "Web Developer Intern",
+      duration: "2023 - 2024",
     },
     {
       company: "E-commerce Startup",
       position: "Freelance Web Developer",
-      duration: "2020 - 2021",
+      duration: "2022 - 2023",
     },
     {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2020 - 2021",
-    },
-    {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
+      company: "St. John's School",
+      position: "Intermediate",
       duration: "2020 - 2021",
     },
   ],
@@ -92,7 +87,7 @@ const education = {
   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
   items: [
     {
-      institution: "Lovely Professional University",
+      institution: "Lovely Professional Univ.",
       degree: "B.Tech CSE",
       duration: "2021 - 2025",
     },
@@ -183,7 +178,7 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className='flex flex-col gap-[30px] text-center xl:center xl:text-left'>
                 <h3 className='text-4xl font-bold'>{experience.title}</h3>
-                <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{experience.description}</p>
+                <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{experience.description} <span className='text-accent'> web galaxy.</span></p>
                 <ScrollArea className="h-[400px]">
                   <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
                     {experience.items.map((item, index) => {
